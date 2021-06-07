@@ -12,7 +12,7 @@ function onSignIn(googleUser) {
       var id_token = googleUser.getAuthResponse().id_token;
       console.log("ID Token: " + id_token);
       document.getElementById("name").innerHTML = profile.getGivenName();
-       window.location.href="resources/html/homepage.html";
+       window.location="resources/html/homepage.html";
     }
 
 function signOut() {
