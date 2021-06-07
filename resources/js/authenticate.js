@@ -14,11 +14,3 @@ function onSignIn(googleUser) {
       document.getElementById("name").innerHTML = profile.getGivenName();
        window.location="resources/html/homepage.html";
     }
-
-function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-      console.log('User signed out.');
-      window.location="../../index.html";
-    });
-  }
