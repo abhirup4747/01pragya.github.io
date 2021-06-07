@@ -20,12 +20,20 @@
         console.log("ID Token: " + id_token);
         document.getElementById("name").innerHTML = profile.getGivenName();
       }
-    </script>
+
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+</script>
     
   </head>
   <body>
     <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div><a href="#" onclick="signOut();">Sign out</a>
+
     <p>HELLO</p>
     <div>Welcome <span id="name"></span>!</div>
   </body>
