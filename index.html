@@ -3,11 +3,7 @@
     <meta name="google-signin-scope" content="profile email">
     <meta name="google-signin-client_id" content="244963800196-55bqgj6fs79mu7plh1tuu25p8lfnm01l.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-  </head>
-  <body>
-    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-    <p>HElo</p>
+    
     <script>
       function onSignIn(googleUser) {
         // Useful data for your client-side scripts:
@@ -22,7 +18,15 @@
         // The ID token you need to pass to your backend:
         var id_token = googleUser.getAuthResponse().id_token;
         console.log("ID Token: " + id_token);
+        document.getElementById("name").InnerHTML = profile.getGivenName();
       }
     </script>
+    
+  </head>
+  <body>
+    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <p>HELLO</p>
+    <div>Welcome <span id="name"></span>!</div>
   </body>
 </html>
