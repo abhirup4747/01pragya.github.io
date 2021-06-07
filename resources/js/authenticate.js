@@ -13,5 +13,4 @@ function onSignIn(googleUser) {
       console.log("ID Token: " + id_token);
       document.getElementById("name").innerHTML = profile.getGivenName();
        window.location="resources/html/homepage.html";
-      console.log('Full Name: ' + profile.getName());
     }
