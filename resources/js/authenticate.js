@@ -1,4 +1,4 @@
-/*function onSignIn(googleUser) {
+function onSignIn(googleUser) {
       // Useful data for your client-side scripts:
       var profile = googleUser.getBasicProfile();
       console.log("ID: " + profile.getId()); // Don't send this directly to your server!
@@ -13,9 +13,9 @@
       console.log("ID Token: " + id_token);
       document.getElementById("info-name").innerHTML = profile.getGivenName();
       document.getElementById("info-detail").innerHTML = profile.getEmail() + "\n" + profile.getName();
-    }*/
+    }
 
-    $(document).ready(function()
+  /*  $(document).ready(function()
     {
         // -- define your function
         $.onSignIn = function(googleUser)
@@ -44,4 +44,4 @@
     $("#info").show();
 
     
-});
+});*/
