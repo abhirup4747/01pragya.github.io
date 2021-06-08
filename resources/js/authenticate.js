@@ -37,7 +37,7 @@
         }
 
         // -- manually call the function once
-    $.myFunctionName(); 
+    $.onSignOn(); 
 
     // -- add a callback to blur on an input
     $("#general").hide();
