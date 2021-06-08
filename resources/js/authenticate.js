@@ -14,6 +14,6 @@ function onSignIn(googleUser) {
       document.getElementById("intro-head").innerHTML = "Welcome to the blog of <span class='unknown'>"+ profile.getGivenName() +"</span>";
       document.getElementById("signout").innerHTML = "<a href=\"#\" onclick=\"signOut();\">Sign out</a>";
       document.getElementById("info-name").innerHTML = profile.getName();
-      document.getElementById("info-detail").innerHTML = profile.getEmail() + "/n" + profile.getName();
+      document.getElementById("info-detail").innerHTML = "Signed in as "+profile.getEmail();
     }
 
