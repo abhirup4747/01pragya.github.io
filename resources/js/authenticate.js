@@ -12,6 +12,7 @@ function onSignIn(googleUser) {
       var id_token = googleUser.getAuthResponse().id_token;
       console.log("ID Token: " + id_token);
       document.getElementById("intro-head").innerHTML = "Welcome to the blog of <span class='unknown'>"+ profile.getGivenName() +"</span>";
+      document.getElementById("disply-name").innerHTML = profile.getGivenName();
       document.getElementById("signout").innerHTML = "<a href=\"#\" onclick=\"signOut();\">Sign out</a>";
       document.getElementById("info-name").innerHTML = profile.getName();
       document.getElementById("info-detail").innerHTML = "Signed in as "+profile.getEmail();
