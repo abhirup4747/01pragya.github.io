@@ -14,6 +14,7 @@
   <meta name="google-signin-client_id" content="244963800196-55bqgj6fs79mu7plh1tuu25p8lfnm01l.apps.googleusercontent.com">
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <script src="resources/js/authenticate.js"></script>
+  <script src="resources/js/logout.js"></script>
 
 </head>
 
@@ -77,6 +78,7 @@
                     </p>
                     <p>                     
                       <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                     <button type="button" class="btn btn-outline-secondary" onclick="signOut();">Sign Out</button>
                       <p>HELLO</p>
                       <div>Welcome <span id="name"></span>!</div>
                     </p>
