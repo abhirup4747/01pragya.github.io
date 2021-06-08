@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>My Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="resources/css/style2.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!--for sso-->
+  <meta name="google-signin-scope" content="profile email">
+  <meta name="google-signin-client_id" content="244963800196-55bqgj6fs79mu7plh1tuu25p8lfnm01l.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="resources/js/authenticate.js"></script>
+
+</head>
+
+<body>
+ <div class="container-fluid parent-div">
+  
+    <header class="align-middle ">
+      <h1 class="myblog"> MY BLOG</h1>
+     <p class="head"> Welcome to the blog of <span class="unknown">unknown</span></p>  
+    </header>
+     
+ 
+    <div class="row">
+
+        <div class="col-sm-8" >
+             <!--First Part-->
+                  <div class="card cardBottomPadding">
+                    <img src="resources/image/landscape.jpg" alt="Avatar" class="img-1">
+                      <div class="cardPadding">
+                          <h5 class="title">TITLE HEADING</h5>
+                          <p> Title description, <span class="date">April 7,2014</span></p>
+                          <p>The New Landscape Declaration sought to articulate and elevate our professional ideals, mostly it exposed the gap between rhetoric and reality. The book arrived in fall 2017, a few months after David Wallace-Wells published his alarming article,
+                            “The Uninhabitable Earth,” with its memorable opening line quaking, 
+                           “It is, I promise, worse than you think.” 
+                          </p>
+                          <div> 
+                            <a2 href="#" class="next">READ MORE &raquo;</a2>
+                            <p class="cmnt"><b>Comments  </b> <span class="unknown"> 0 </span></p>
+                          </div>
+                      </div>
+                  </div>
+
+          <!---Second Part-->
+                  <div class="card cardBottomPadding">
+                      <img src="resources/image/bridge.jpg" alt="Avatar" class="img-1">
+                      <div class="cardPadding" >
+                          <h5 class="title">BLOG ENTRY</h5>
+                          <p> Title description, <span class="date">April 2,2014</span></p>
+                          <p>The New Landscape Declaration sought to articulate and elevate our professional ideals, mostly it exposed the gap between rhetoric and reality. The book arrived in fall 2017, a few months after David Wallace-Wells published his alarming article,
+                            “The Uninhabitable Earth,” with its memorable opening line quaking, 
+                           “It is, I promise, worse than you think.” 
+                           </p>
+                          <div>   
+                            <a2 href="#" class="next" >READ MORE &raquo;</a2>
+                            <p class="cmnt"><b>Comments  </b> <span class="unknown"> 2 </span></p>
+                          </div>
+                      </div>
+                  </div>
+         <!--end of col-->         
+        </div>
+
+         <!---Third Part-->
+       <div class="col-sm-4" >
+           <div class="card cardBottomPadding">
+                <img src="resources/image/flower.jpg" alt="Avatar" class="intro" style="width:100%">
+                <div class="cardPadding" id="general">
+                    <h3> My Name</h3>
+                    <p>Video is a great way to create quick rapport on your About Page … for site visitors who like video.
+                    But visitors who are coming to your site at work may not want your voice, however delightful, blasting from the speakers in their cube.
+                    They also may not have 6:23 minutes to spend figuring out who you are.
+                    </p>
+                    <p>                     
+                      <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                      <p>HELLO</p>
+                      <div>Welcome <span id="name"></span>!</div>
+                    </p>
+                </div>
+                <div id="info" class="cardPadding">
+                  <h3 id="info-name"></h3>
+                  <p id="info-detail"></p>
+                </div>
+            </div>
+        <!--end of third part-->      
+       </div>
+
+            <!---Fourth Part-->  
+            <div class="col-sm-4">
+                <div class="row ">
+                                  <div class="col-sm-12 picture">
+                                    <table class="table table-hover card">
+                                          
+                                      <thead>
+                                        <tr>
+                                          <div class="tr-div">
+                                            <h3>Popular Posts</h3>
+                                          </div>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td ><img src="resources/image/mountain.jpg" class="img-2"></td>
+                                          <td class="tddesc"><b>Doe</b> <br> Send mattis nunc</td>
+                                            
+                                        </tr>
+                                        <tr >
+                                          <td ><img src="resources/image/sunset.jpg" class="img-2" ></td>
+                                          <td class="tddesc"><b>Moe</b> <br> Praes tinci seed</td>
+                                        </tr>
+                                        <tr>
+                                          <td ><img src="resources/image/white.jpg" class="img-2" ></td>
+                                          <td class="tddesc"><b>Dooley</b> <br> Utricitis congue</td>
+                                        </tr>
+                                          <tr>
+                                          <td ><img src="resources/image/beach.jpg" class="img-2"></td>
+                                          <td class="tddesc"><b>Dooley</b><br> Lorem ipsum dipsum</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+
+                                  <!--Fifth Part-->
+                                  <div class="col-sm-12 ">
+                                      <div class="card">
+                                          <div class="tr-div">
+                                            <h3>Tags</h3>
+                                          </div>
+                                          
+                                          <p style="background-color: white;">   
+                                              <span class="tag-1">Travel</span> 
+                                              <span class="tag ">New York</span> <span class="tag ">London</span>
+                                                <span class="tag ">IKEA</span> <span class="tag ">NORWAY</span> <span class="tag ">DIY</span>
+                                                <span class="tag ">Ideas</span> <span class="tag ">Baby</span> <span class="tag ">Family</span>
+                                                <span class="tag ">News</span> <span class="tag ">Clothing</span> <span class="tag ">Shopping</span>
+                                                <span class="tag ">Sports</span> <span class="tag ">Games</span>
+                                                </p>
+                                          </p>
+                                
+                                      </div>
+                                  <!--end f tags-->
+                                  </div>
+
+                    <!--end of row-->
+                </div>
+            <!--end of col--> 
+            </div>
+
+    <!--end of row div-->
+    </div>
+
+     <!--Footer-->
+            <footer>
+                <div class="footer-copyright ">
+                    <div class="cont">
+                        <div class="footerprevious">
+                            <a2 href="www.google.com" class="previous">&laquo; Previous</a2>
+                            <a2 href="#" class="next-btn">Next &raquo;</a2>
+                        </div>
+                        <p class="powered">Powered by <u>w3.css</u></p>
+                    </div>
+              </div>
+            </footer>
+    <!--end of main div-->        
+    </div>
+</body>
+</html>
