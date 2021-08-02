@@ -17,27 +17,12 @@ function onSignIn(googleUser) {
       document.getElementById("email").innerHTML = "Signed In as "+ profile.getEmail();
     }
 
-/*const initApple = () => {
-  window.AppleID.auth.init({
-    clientId: "com.example.app.signin.dunkin", // This is the service ID we created.
-    scope: "name email", // To tell apple we want the user name and emails fields in the response it sends us.
-    redirectURI: "https://01pragya.github.io", // As registered along with our service ID
-    state: "origin:web", // Any string of your choice that you may use for some logic. It's optional and you may omit it.
-    usePopup: true, // Important if we want to capture the data apple sends on the client side.
-  });
-};
-
-const singInApple = async () => {
-   try {
+try {
      const data = await AppleID.auth.signIn();
-     console.log(data);
-     return data;
-      }
-   catch ( error ) {
+      console.log("success");
+} catch ( error ) {
      //handle error.
-         console.log("error is there");
-      }
-
-}; */
+      console.log("failure");
+}
 
 
