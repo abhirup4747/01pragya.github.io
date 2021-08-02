@@ -17,12 +17,14 @@ function onSignIn(googleUser) {
       document.getElementById("email").innerHTML = "Signed In as "+ profile.getEmail();
     }
 
-try {
-     const data = await AppleID.auth.signIn();
-      console.log("success");
-} catch ( error ) {
-     //handle error.
-      console.log("failure");
+function try(){
+      
+      try {
+           const data = await AppleID.auth.signIn();
+            console.log("success");
+      } catch ( error ) {
+           //handle error.
+            console.log("failure");
+      }
 }
-
 
