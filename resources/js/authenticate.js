@@ -30,6 +30,7 @@ const initApple = () => {
 const singInApple = async () => {
    try {
      const data = await AppleID.auth.signIn();
+     console.log(data);
      return data;
       }
    catch ( error ) {
