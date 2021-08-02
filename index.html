@@ -42,11 +42,12 @@
              state: "openssl_random_pseudo_bytes", // Any string of your choice that you may use for some logic. It's optional and you may omit it.
             // usePopup: true, // Important if we want to capture the data apple sends on the client side.
            });
+            console.log("success11");
          };
-          console.log("success11");
+          console.log("success12");
          const singInApple = async () => {
            const response = await window.AppleID.auth.signIn();
-           console.log("success");
+           console.log("success13");
            return response;
          };
         /* try {
