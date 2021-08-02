@@ -11,6 +11,11 @@
   src: url("../fonts/NavineDemo-SemiCondensed\ .woff");
 }
 
+.signin-button > div > div > svg {  
+  height: 50px;  
+  width: 100%;  
+} 
+
 .myblog{
   font-family: myFont-3;
   text-align: center; 
