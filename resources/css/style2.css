@@ -11,9 +11,10 @@
   src: url("../fonts/NavineDemo-SemiCondensed\ .woff");
 }
 
-.signin-button > div > div > svg {  
-  height: 50px;  
-  width: 100%;  
+.signin-button {
+  border-radius: 10px;
+  width: 210px;
+  height: 40px;
 } 
 
 .myblog{
