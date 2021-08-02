@@ -17,7 +17,7 @@ function onSignIn(googleUser) {
       document.getElementById("email").innerHTML = "Signed In as "+ profile.getEmail();
     }
 
-const initApple = () => {
+/*const initApple = () => {
   window.AppleID.auth.init({
     clientId: "com.example.app.signin.dunkin", // This is the service ID we created.
     scope: "name email", // To tell apple we want the user name and emails fields in the response it sends us.
@@ -38,6 +38,6 @@ const singInApple = async () => {
          console.log("error is there");
       }
 
-};
+}; */
 
 
