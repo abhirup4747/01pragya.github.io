@@ -41,9 +41,6 @@
 
 <body>
    
-   <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
-       
-   
  <div class="container-fluid parent-div">
   
     <header class="align-middle ">
@@ -105,8 +102,20 @@
                    <p> Sign In with Google >> </p>                   
                    <div class="g-signin2" data-onsuccess="onSignIn"></div></br>
                      <p> Sign In with Apple >> </p>
-             
-                     <div id="appleid-signin" class="signin-button" data-color="black" data-border="true" data-type="sign in"></div>
+              
+                     <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+              <div id="appleid-signin" class="signin-button" data-color="black" data-border="true" data-type="sign in"></div>
+      <script type="text/javascript">
+            AppleID.auth.init({
+                clientId : 'com.example.app.signin.dunkin',
+                scope : 'name email',
+                redirectURI : 'https://www.google.com',
+                state : 'openssl_random_pseudo_bytes',
+                //nonce : '[NONCE]',
+                //usePopup : true //or false defaults to false
+            });
+        </script> 
+                     
                     <span id="signout"></span>                    
                     <p id="email"></p>
                 </div>
