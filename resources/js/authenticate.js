@@ -23,7 +23,7 @@ const signInApple = () => {
            window.AppleID.auth.init({
                 clientId : 'com.example.app.signin.dunkin',
                 scope : 'name email',
-                redirectURI : 'https://01pragya.github.io',
+                redirectURI : 'https://example-app.com/redirect',
                // state : 'openssl_random_pseudo_bytes',               
                 usePopup : true //or false defaults to false
             });
