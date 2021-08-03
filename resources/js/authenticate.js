@@ -17,8 +17,8 @@ function onSignIn(googleUser) {
       document.getElementById("email").innerHTML = "Signed In as "+ profile.getEmail();
     }
 
-function signin() {
-      
+
+const singInApple = async () => {      
       try {
            const data = await AppleID.auth.signIn();
             console.log("success");
@@ -27,4 +27,6 @@ function signin() {
             console.log("failure");
       }
 }
+
+
 
