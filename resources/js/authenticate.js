@@ -24,15 +24,14 @@ const signInApple = () => {
                 clientId : 'com.example.app.signin.dunkin',
                 scope : 'name email',
                 redirectURI : 'https://01pragya.github.io',
-                state : 'openssl_random_pseudo_bytes',
-               // nonce : '[NONCE]',
+               // state : 'openssl_random_pseudo_bytes',               
                 usePopup : true //or false defaults to false
             });
          
          const response = async () => {      
             try {
                  const data = await AppleID.auth.signIn();
-                  console.log(data);
+                  console.log(data.authorization);
             } catch ( error ) {
                  //handle error.
                   console.log("failure");
