@@ -17,7 +17,7 @@ function onSignIn(googleUser) {
       document.getElementById("email").innerHTML = "Signed In as "+ profile.getEmail();
     }
 
-function tryo() {
+function signin() {
       
       try {
            const data = await AppleID.auth.signIn();
