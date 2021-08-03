@@ -20,7 +20,7 @@ function onSignIn(googleUser) {
 
 const signInApple = () => { 
       //alert("Hello");
-           window.AppleID.auth.init({
+         /*  window.AppleID.auth.init({
                 clientId : 'com.example.app.signin.dunkin',
                 scope : 'name email',
                 redirectURI : 'https://01pragya.github.io',
@@ -38,7 +38,7 @@ const signInApple = () => {
                   console.log("failure");
             }
          }
-         response();
+         response();*/
 }
 
 
