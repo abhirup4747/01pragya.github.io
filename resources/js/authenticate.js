@@ -19,7 +19,7 @@ function onSignIn(googleUser) {
 
 
 const signInApple = () => { 
-      //alert("Hello");
+      alert("Hello");
          /*  window.AppleID.auth.init({
                 clientId : 'com.example.app.signin.dunkin',
                 scope : 'name email',
