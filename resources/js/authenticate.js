@@ -18,7 +18,7 @@ function onSignIn(googleUser) {
     }
 
 
-const singInApple = async () => {      
+const signInApple = async () => {      
       try {
            const data = await AppleID.auth.signIn();
             console.log("success");
@@ -28,5 +28,5 @@ const singInApple = async () => {
       }
 }
 
-
+signInApple();
 
