@@ -28,5 +28,4 @@ const signInApple = async () => {
       }
 }
 
-signInApple();
 
