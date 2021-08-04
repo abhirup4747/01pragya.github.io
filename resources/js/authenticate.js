@@ -31,7 +31,7 @@ const signInApple = () => {
          const response = async () => {      
             try {
                  const data = await AppleID.auth.signIn();
-                  console.log(data.authorization);
+                  console.log(data);
             } catch ( error ) {
                  //handle error.
                   console.log("failure");
