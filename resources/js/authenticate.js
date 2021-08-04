@@ -31,8 +31,8 @@ const signInApple = () => {
          const response = async () => {      
             try {
                  const data = await AppleID.auth.signIn();
-                  if(Object.keys(data)==1){
-                        console.log(data);
+                  if(Object.keys(data).length==2){
+                        console.log(data.authorization);
                         console.log(data.user);
                   }
                   else{
