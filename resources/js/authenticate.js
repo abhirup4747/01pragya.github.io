@@ -38,6 +38,23 @@ const signInApple = () => {
             }
          }
          response();
+      
+      const appleSignin = require("apple-signin-auth");
+
+      const { authorization, user } = req.body;
+
+      try {
+        const { sub: userAppleId } = await appleSignin.verifyIdToken(
+          authorization.id_token, // We need to pass the token that we wish to decode.
+          {
+            audience: "com.example.app.signin.dunkin", // client id - The same one we used  on the frontend, this is the secret key used for encoding and decoding the token.
+            ignoreExpiration: true, // Token will not expire unless you manually do so.
+          }
+        );
+      } catch (err) {
+        // Token is not verified
+        console.error(err);
+      }
 }
 
 
