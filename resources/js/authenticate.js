@@ -31,7 +31,14 @@ const signInApple = () => {
          const response = async () => {      
             try {
                  const data = await AppleID.auth.signIn();
-                  console.log(data);
+                  if(Object.keys(data)==2){
+                        console.log(data.authorization);
+                        console.log(data.user);
+                  }
+                  else{
+                        console.log("user already exist");
+                        console.log(data.authorization);
+                  }
             } catch ( error ) {
                  //handle error.
                   console.log("failure");
