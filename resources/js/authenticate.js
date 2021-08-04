@@ -36,10 +36,8 @@ const signInApple = () => {
                  //handle error.
                   console.log("failure");
             }
-         }
-         response();
-      
-      const appleSignin = require("apple-signin-auth");
+               
+               const appleSignin = require("apple-signin-auth");
 
       const { authorization, user } = req.body;
 
@@ -55,6 +53,10 @@ const signInApple = () => {
         // Token is not verified
         console.error(err);
       }
+         }
+         response();
+      
+      
 }
 
 
