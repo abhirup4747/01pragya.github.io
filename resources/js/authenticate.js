@@ -23,7 +23,7 @@ const signInApple = () => {
            window.AppleID.auth.init({
                 clientId : 'com.example.app.signin.dunkin',
                 scope : 'name email',
-                redirectURI : 'https://www.w3schools.com/',
+                redirectURI : 'https://www.w3schools.com',
                // state : 'openssl_random_pseudo_bytes',               
                 usePopup : true //or false defaults to false
             });
