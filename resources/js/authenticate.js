@@ -19,11 +19,11 @@ function onSignIn(googleUser) {
 
 
 const signInApple = () => { 
-      alert("Hello");
+     // alert("Hello");
            window.AppleID.auth.init({
                 clientId : 'com.example.app.signin.dunkin',
                 scope : 'name email openid',
-                redirectURI : 'https://01pragya.github.io',
+                redirectURI : 'https://01pragya.github.io/callback',
                // state : 'openssl_random_pseudo_bytes',               
                 usePopup : true //or false defaults to false
             });
