@@ -1,6 +1,6 @@
 function onSignIn(googleUser) {
       // Useful data for your client-side scripts:
-      var profile = googleUser.getBasicProfile();
+     /* var profile = googleUser.getBasicProfile();
       console.log("ID: " + profile.getId()); // Don't send this directly to your server!
       console.log('Full Name: ' + profile.getName());
       console.log('Given Name: ' + profile.getGivenName());
@@ -14,7 +14,7 @@ function onSignIn(googleUser) {
       document.getElementById("owner").innerHTML =  profile.getGivenName() ;
       document.getElementById("disply-name").innerHTML = profile.getName();
       document.getElementById("signout").innerHTML = "<a href=\"#\" onclick=\"signOut();\">Sign out</a>";
-      document.getElementById("email").innerHTML = "Signed In as "+ profile.getEmail();
+      document.getElementById("email").innerHTML = "Signed In as "+ profile.getEmail();*/
     }
 
 
