@@ -25,7 +25,7 @@ const signInApple = () => {
                 scope : 'name email openid',
                 redirectURI : 'https://01pragya.github.io',
                // state : 'openssl_random_pseudo_bytes',               
-                usePopup : false //or false defaults to false
+                usePopup : true //or false defaults to false
             });
          
          const response = async () => {      
